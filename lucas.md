@@ -54,7 +54,9 @@ usermod -g group2 u3
 usermod -g group2 u4
 ```
 
-7- <b> _Lister les derniers paquets installés explicitement avec la commande apt install_ </b>
+7- <b> _Créez deux répertoires /home/groupe1 et /home/groupe2 pour le contenu commun aux groupes, et
+mettez en place les permissions permettant aux membres de chaque groupe d’écrire dans le dossier
+associé._ </b>
 
 j'ai fait `cat /var/log/dpkg.log` et je vois qu'il y'a eu fortunes en paquet installlé récemment 
 
