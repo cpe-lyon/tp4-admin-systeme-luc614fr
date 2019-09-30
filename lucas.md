@@ -80,6 +80,7 @@ Pour activer son compte j'ai créer un mot de passe en faisant `passwd u1`
 
 
 11- <b> _Quels sont l’uid et le gid de u1 ?_ </b>
+
 id u1
 uid=1001(u1) gid=1001(groupe1) groups=1001(groupe1)
 
