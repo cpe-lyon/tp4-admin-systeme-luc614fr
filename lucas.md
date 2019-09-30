@@ -30,6 +30,7 @@ Voici toute les commandes que j'ai tappé
 4- <b> _Donnez deux moyens d’afficher les membres de groupe2_ </b>
 
 j'ai fait `cat /etc/group | grep group2` 
+Sinon on peut installer le paquet "members" avec `apt get install members` puis il suffit de faire `members group1` ou `members group2`
 
 
 5- <b> _Faites de groupe1 le groupe propriétaire de /home/u1 et /home/u2 et de groupe2 le groupe propriétaire
