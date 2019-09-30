@@ -84,6 +84,11 @@ Pour activer son compte j'ai créer un mot de passe en faisant `passwd u1`
 id u1
 uid=1001(u1) gid=1001(groupe1) groups=1001(groupe1)
 
+11- <b> _Quel utilisateur a pour uid 1003 ?_ </b>
+
+j'ai fait la commande `cat /etc/passwd | grep 1003` 
+
+
 # Exercice 2
 
 j'ai fait `which -a ls | tail -1 | xargs dpkg -S` 
