@@ -43,9 +43,15 @@ chown u1:group2 /home/u3
 chown u1:group2 /home/u4 
 ``` 
 
-6- <b> _Quels paquets proposent de jouer au sudoku ?_ </b>
+6- <b> _Remplacez le groupe primaire des utilisateurs :_ </b>
 
-j'ai fait `apt-cache search sudoku` il y'a plusieurs résultats possible (ksudoku, gnome-sudoku, fltk1.3-games,nudoku etc..)
+J'ai fait les commandes <br>
+```
+usermod -g group1 u1 
+usermod -g group1 u2
+usermod -g group2 u3
+usermod -g group2 u4
+```
 
 7- <b> _Lister les derniers paquets installés explicitement avec la commande apt install_ </b>
 
