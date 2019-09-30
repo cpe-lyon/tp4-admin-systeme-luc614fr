@@ -32,10 +32,16 @@ Voici toute les commandes que j'ai tappé
 j'ai fait `cat /etc/group | grep group2` 
 
 
-5- <b> _A quoi sert le paquet fortunes ? Installez-le._ </b>
+5- <b> _Faites de groupe1 le groupe propriétaire de /home/u1 et /home/u2 et de groupe2 le groupe propriétaire
+de /home/u3 et /home/u4_ </b>
 
-j'ai fait `apt show fortunes` pour savoir a quoi sert le paquet fortunes <br>
-j'ai ensuite `apt-get install fortunes` pour l'installer 
+j'ai fait les commandes suivantes : <br>
+```
+chown u1:group1 /home/u1
+chown u1:group1 /home/u2 
+chown u1:group2 /home/u3 
+chown u1:group2 /home/u4 
+``` 
 
 6- <b> _Quels paquets proposent de jouer au sudoku ?_ </b>
 
