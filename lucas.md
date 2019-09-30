@@ -84,9 +84,19 @@ Pour activer son compte j'ai créer un mot de passe en faisant `passwd u1`
 id u1
 uid=1001(u1) gid=1001(groupe1) groups=1001(groupe1)
 
-11- <b> _Quel utilisateur a pour uid 1003 ?_ </b>
+12- <b> _Quel utilisateur a pour uid 1003 ?_ </b>
 
 j'ai fait la commande `cat /etc/passwd | grep 1003` 
+
+
+13- <b> _Quel est l’id du groupe groupe1 ?_ </b>
+
+j'ai fait la commande `cat /etc/group | grep group1`  l'id du groupe 1 est donc 1001
+
+
+14- <b> _Quel groupe a pour gid 1002 ??_ </b>
+
+j'ai fait commande `cat /etc/group | grep 1002` c'est donc le groupe 2 qui a cette gid
 
 
 # Exercice 2
