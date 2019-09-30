@@ -71,7 +71,7 @@ j'ai fait `chmod +t /home/group1` et `chmod +t /home/group2`
 
 9- <b> _Pouvez-vous vous connecter en tant que u1 ? Pourquoi ?_ </b>
 
-j'ai fait la commande `su u1`
+j'ai fait la commande `su u1`. Je n'arrive pas a me connecter car je n'ai pas de mot de passe 
 
 10- <b> _Activez le compte de l’utilisateur u1 et vérifiez que vous pouvez désormais vous connecter avec son
 compte._ </b>
