@@ -58,7 +58,23 @@ usermod -g group2 u4
 mettez en place les permissions permettant aux membres de chaque groupe d’écrire dans le dossier
 associé._ </b>
 
-j'ai fait `cat /var/log/dpkg.log` et je vois qu'il y'a eu fortunes en paquet installlé récemment 
+j'ai fait `mkdir /home/groupe1` et `mkdir /home/groupe2`
+j'ai fait `chown u1:groupe1 groupe1` et `chown u2:groupe2 groupe2` 
+j'ai fait `chmod 720 groupe1 groupe2` 
+
+
+8- <b> _Comment faire pour que, dans ces dossiers, seul le propriétaire d’un fichier ait le droit de renommer
+ou supprimer ce fichier ?_ </b>
+
+j'ai fait `chmod +t /home/group1` et `chmod +t /home/group2`
+
+
+6- <b> _Pouvez-vous vous connecter en tant que u1 ? Pourquoi ?_ </b>
+
+
+6- <b> _Remplacez le groupe primaire des utilisateurs :_ </b>
+6- <b> _Remplacez le groupe primaire des utilisateurs :_ </b>
+
 
 # Exercice 2
 
