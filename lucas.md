@@ -29,7 +29,7 @@ Voici toute les commandes que j'ai tappé
 
 4- <b> _Donnez deux moyens d’afficher les membres de groupe2_ </b>
 
-j'ai fait `cat /etc/group | grep group2` 
+j'ai fait `cat /etc/group | grep group2` <br>
 Sinon on peut installer le paquet "members" avec `apt get install members` puis il suffit de faire `members group1` ou `members group2`
 
 
