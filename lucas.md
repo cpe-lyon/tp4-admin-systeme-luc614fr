@@ -69,12 +69,19 @@ ou supprimer ce fichier ?_ </b>
 j'ai fait `chmod +t /home/group1` et `chmod +t /home/group2`
 
 
-6- <b> _Pouvez-vous vous connecter en tant que u1 ? Pourquoi ?_ </b>
+9- <b> _Pouvez-vous vous connecter en tant que u1 ? Pourquoi ?_ </b>
+
+j'ai fait la commande `su u1`
+
+10- <b> _Activez le compte de l’utilisateur u1 et vérifiez que vous pouvez désormais vous connecter avec son
+compte._ </b>
+
+Pour activer son compte j'ai créer un mot de passe en faisant `passwd u1` 
 
 
-6- <b> _Remplacez le groupe primaire des utilisateurs :_ </b>
-6- <b> _Remplacez le groupe primaire des utilisateurs :_ </b>
-
+11- <b> _Quels sont l’uid et le gid de u1 ?_ </b>
+id u1
+uid=1001(u1) gid=1001(groupe1) groups=1001(groupe1)
 
 # Exercice 2
 
