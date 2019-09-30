@@ -98,6 +98,10 @@ j'ai fait la commande `cat /etc/group | grep group1`  l'id du groupe 1 est donc 
 
 j'ai fait commande `cat /etc/group | grep 1002` c'est donc le groupe 2 qui a cette gid
 
+15- <b> _Retirez l’utilisateur u3 du groupe groupe2. Que se passe-t-il ? Expliquez._ </b>
+
+j'ai fait la commande gpasswd -d u3 groupe2. <br>
+u3 n'est plus dans le groupe 2 et ne peux donc plus modifier ou acceder au dossier /home/groupe2 . 
 
 # Exercice 2
 
