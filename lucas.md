@@ -231,8 +231,7 @@ ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un
 j'ai fait la commande `umask 022 test` 
 
 
-11- <b> _Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos réper-
-toires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
+11- <b> _Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos répertoires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
 
 
