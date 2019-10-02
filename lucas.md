@@ -216,8 +216,7 @@ test, de vous déplacer dans ssrep, de lister son contenu. Qu’en concluez-vous
 droits que l’on possède sur le répertoire courant ? Peut-on retourner dans le répertoire parent avec ”cd
 ..” ? Pouvez-vous donner une explication ?_ </b>
 
-
-
+Les droits sont dynamiques et s'applique dès leurs modifications. Pour l'exemple, une fois le droit d'execution retiré, plus aucune action n'est possible.
 
 
 9- <b> _Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants
