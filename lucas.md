@@ -159,18 +159,55 @@ j'ai fait `chmod 300 fichier | echo "echo hello world" > fichier`. On peut écri
 5- <b> _Placez-vous dans le répertoire test, et retirez-vous le droit en lecture pour ce répertoire. Listez le
 contenu du répertoire, puis exécutez ou affichez le contenu du fichier fichier. Qu’en déduisez-vous ?
 Rétablissez le droit en lecture sur test_ </b>
-
-ça ne va pas marcher car on a pas les droits d'execution. Cependant en Root ça va marcher 
+```
+sudo chmod u-r ../test
+ls 
+cannot open directory '.': Permission denied
+./fichier 
+bash: ./fichier: Permission denied
+``` 
+ça ne va pas marcher car on a plus les droits d'execution. 
 
 6- <b> _Créez dans test un fichier nouveau ainsi qu’un répertoire sstest. Retirez au fichier nouveau et au
 répertoire test le droit en écriture. Tentez de modifier le fichier nouveau. Rétablissez ensuite le droit
 en écriture au répertoire test. Tentez de modifier le fichier nouveau, puis de le supprimer. Que pouvez-
 vous déduire de toutes ces manipulations ?_ </b>
 
+```
+nano nouveau
+mkdir sstest
+chmod u-w nouveau
+chmod u-w ../test
+nano nouveau
+[ Error writing nouveau: Permission denied ]
+chmod u+w ../test
+nano nouveau
+[ Error writing nouveau: Permission denied ] 
+rm nouveau
+rm: remove write-protected regular file 'nouveau'? yes
+ls fichier  sstest
+``` 
+
+On en déduit qu'il n'y pas d'héritage des droits pour les fichiers situé dans les répertoires 
+
 
 7- <b> _Positionnez vous dans votre répertoire personnel, puis retirez le droit en exécution du répertoire test.
 Tentez de créer, supprimer, ou modifier un fichier dans le répertoire test, de vous y déplacer, d’en
 lister le contenu, etc...Qu’en déduisez vous quant au sens du droit en exécution pour les répertoires ?_ </b>
+
+``` 
+chmod u-x test
+ nano test/nouveau
+[ Path 'test' is not accessible ]
+ cd test/
+-bash: cd: test/: Permission denied
+ls test
+ls: cannot access 'test/sstest': Permission denied
+ls: cannot access 'test/fichier': Permission denied
+fichier  sstest
+``` 
+
+On ne peut rien faire car on a pas les droits.
 
 
 8- <b> _Rétablissez le droit en exécution du répertoire test. Positionnez vous dans ce répertoire et retirez lui
@@ -180,17 +217,30 @@ droits que l’on possède sur le répertoire courant ? Peut-on retourner dans l
 ..” ? Pouvez-vous donner une explication ?_ </b>
 
 
+j'ai fait la commande `chmod 640 test` 
+
+
 9- <b> _Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants
 pour qu’une autre personne de votre groupe puisse y accéder en lecture, mais pas en écriture._ </b>
+
+j'ai fait la commande `umask 022 test` 
 
 10- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
+j'ai fait la commande `umask 037 test` 
+
+
 11- <b> _Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos réper-
 toires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
+j'ai fait la commande `chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r--` <br>
+j'ai fait la commande `chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-`
+
 12- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
+
+
 
 13- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
