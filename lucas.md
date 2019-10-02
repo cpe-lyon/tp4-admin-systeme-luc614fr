@@ -242,8 +242,10 @@ j'ai fait la commande `umask 037`
 13- <b> _Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous
 pourrez vous aider de la commande stat pour valider vos réponses)_ </b>
 
-j'ai fait la commande `chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r--` <br>
-j'ai fait la commande `chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-`
+c'est  `chmod 534` pour chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r-- <br>
+c'est `chmod 602` pour uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- <br>
+c'est 
+c'est `chmod 510` pour chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- <br>
 
 14- <b> _Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier
 /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?_ </b>
