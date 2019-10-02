@@ -222,7 +222,7 @@ Les droits sont dynamiques et s'applique dès leurs modifications. Pour l'exempl
 9- <b> _Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants
 pour qu’une autre personne de votre groupe puisse y accéder en lecture, mais pas en écriture._ </b>
 
-j'ai fait la commande `chmod 640 test` 
+j'ai fait la commande `chmod 740 test` 
 
 10- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
