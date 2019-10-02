@@ -217,7 +217,7 @@ droits que l’on possède sur le répertoire courant ? Peut-on retourner dans l
 ..” ? Pouvez-vous donner une explication ?_ </b>
 
 
-j'ai fait la commande `chmod 640 test` 
+
 
 
 9- <b> _Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants
@@ -250,5 +250,5 @@ j'ai fait la commande `chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-`
 14- <b> _Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier
 /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?_ </b>
 
-
+j'ai fait `ls -l passwd` pour afficher les droits sur le programme 
 
