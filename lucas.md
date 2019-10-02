@@ -230,18 +230,23 @@ ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un
 
 j'ai fait la commande `umask 037 test` 
 
-
 11- <b> _Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos réper-
 toires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
+
+
+
+12- <b> _Définissez un umask équilibré qui vous autorise un accès complet et autorise un accès en lecture aux
+membres de votre groupe. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
+
+
+13- <b> _Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous
+pourrez vous aider de la commande stat pour valider vos réponses)_ </b>
 
 j'ai fait la commande `chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r--` <br>
 j'ai fait la commande `chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-`
 
-12- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
-ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
+14- <b> _Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier
+/etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?_ </b>
 
 
-
-13- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
-ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
