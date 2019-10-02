@@ -228,17 +228,17 @@ j'ai fait la commande `chmod 640 test`
 10- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
-j'ai fait la commande `umask 022 test` 
+j'ai fait la commande `umask 077 test` 
 
 
 11- <b> _Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos répertoires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
-
+j'ai fait la commande `umask 022`
 
 12- <b> _Définissez un umask équilibré qui vous autorise un accès complet et autorise un accès en lecture aux
 membres de votre groupe. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
-j'ai fait la commande `umask 037 test` 
+j'ai fait la commande `umask 067` 
 
 13- <b> _Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous
 pourrez vous aider de la commande stat pour valider vos réponses)_ </b>
