@@ -103,6 +103,31 @@ j'ai fait commande `cat /etc/group | grep 1002` c'est donc le groupe 2 qui a cet
 j'ai fait la commande gpasswd -d u3 groupe2. <br>
 u3 n'est plus dans le groupe 2 et ne peux donc plus modifier ou acceder au dossier /home/groupe2 . 
 
+16- <b> _Modifiez le compte de u4_ </b>
+
+``` 
+sudo chage -E 18048 u4
+sudo chage -M 90 u4
+sudo chage -m 5 u4
+sudo chage -W 14 u4
+sudo chage -I 30 u4
+
+``` 
+
+17- <b> _Quel est l’interpréteur de commandes (Shell) de l’utilisateur root ?_ </b>
+
+L'interpréteur de commandes de l'utilisateur est /bin/bash j'ai fait `echo $SHELL` 
+
+18- <b> _à quoi correspond l’utilisateur nobody ?_ </b>
+
+nobody est le nom conventionnel d'un compte d'utilisateur à qui aucun fichier n'appartient, qui n'est dans aucun groupe qui a des privilèges et dont les seules possibilités sont celles que tous les "autres utilisateurs" ont.
+
+19- <b> _Par défaut, combien de temps la commande sudo conserve-t-elle votre mot de passe en mémoire ?
+Quelle commande permet de forcer sudo à oublier votre mot de passe ?_ </b>
+
+Le temps par défaut est 15 minute. <br>
+
+
 # Exercice 2
 
 j'ai fait `which -a ls | tail -1 | xargs dpkg -S` 
