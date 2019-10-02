@@ -244,7 +244,7 @@ pourrez vous aider de la commande stat pour valider vos réponses)_ </b>
 
 c'est  `chmod 534` pour chmod u=rx,g=wx,o=r fic = chmod 534 -r-x--wx-r-- <br>
 c'est `chmod 602` pour uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- <br>
-c'est 
+c'est rw-r-x--wx pour chmod 653 fic en sachant que les droits initiaux de fic sont 711 
 c'est `chmod 510` pour chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- <br>
 
 14- <b> _Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier
