@@ -179,30 +179,3 @@ ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un
 12- <b> _Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture,
 ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire._ </b>
 
-
-# Exercice 3
-le script bash est le suivant, quand je lance le script il suffit d'écrire la commande 
-
-``` 
-!/bin/bash
-if [ -z "$1" ]; then
-        echo "Non installé."
-else
-        dpkg -S $(which "$1");
-        echo "Installé";
-fi
-``` 
-
-Réponse cours : `dpkg -l "nom_package" | grep "^ii") && echo "Installé" || echo "Non installé"` 
-# Exercice 4 
-Pour voir les programmes livré avec coreutils on fait `dpkg -L coreutils | grep "bin"`  ```[``` est l'équivalent de test, on doit donc bien mettre un espace après le crochet.
-# Exercice 5
-
-j'ai d'abord installé aptitude en faisant `apt install aptitude` ensuite j'ai chercher le paquet emacs en faisant `/` une fois cela fait j'ai fait `+ g g` et le paquet a été installé 
-
-# Exercice 6. Installation d’un paquet par PPA
-
-2- <b> _Vérifiez qu’un nouveau fichier a été créé dans /etc/apt/sources.list.d. Que contient-il ?_ </b>
-
-un fichier .list et un fichier .save
-
