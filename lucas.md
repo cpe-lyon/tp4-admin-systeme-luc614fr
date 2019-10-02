@@ -248,5 +248,8 @@ j'ai fait la commande `chmod uo+w,g-rx fic = chmod 706 -rwx-x-rw-`
 14- <b> _Affichez les droits sur le programme passwd. Que remarquez-vous ? En affichant les droits du fichier
 /etc/passwd, pouvez-vous justifier les permissions sur le programme passwd ?_ </b>
 
-j'ai fait `ls -l passwd` pour afficher les droits sur le programme 
+j'ai fait `ls -l passwd` pour afficher les droits sur le programme <br>
+-rw-r--r-- 1 root root
+
+le fichier passwd est un fichier très important c'est donc pour cela que seul root a les droits sur se fichier.
 
